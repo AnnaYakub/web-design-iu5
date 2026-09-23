@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="laba1.css"> 
+</head>
+<body>
+  <header class="header">
+  <div class="container">
+    <img src="logo.jpg" alt="ops" class="header__logo"></img>
+    <nav class="menu">
+      <ul>
+        <li><a href="opening.html">Главная</a></li>
+        <li><a href="laba1.html">Калькулятор</a></li>
+        <li><a href="https://github.com/AnnaYakub/web-design-iu5">Репозиторий</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div class="text">
+  
+    <h1>О нас</h1>
+    <div class="text_about">
+    <p>Издательская группа «АСТ» — одно из двух крупнейших издательств России, занимающее лидирующие позиции на российском книжном рынке.
+Сегодня оно публикует книги всех жанров для широкой аудитории. Среди авторов издательства — Павел Басинский, Вера Богданова, Евгений Водолазкин, Екатерина Вильмонт, Денис Драгунский, Михаил Жебрак, Сергей Лукьяненко, Людмила Петрановская, Николай Цискаридзе и другие.</p>
+    <img src="img1.png"></img>
+    </div>
+</div>
+
+<section class="books-section">
+  <div class="books-header">
+    <h2>Наши книги</h2>
+    <p class="books-subtitle">Листайте ленту, чтобы увидеть больше</p>
+  </div>
+
+  <div class="carousel-wrap">
+    <button class="carousel-arrow carousel-arrow--left" id="btn_prev" aria-label="Назад">‹</button>
+
+    <div class="carousel" id="carousel">
+
+      <article class="book-card">
+        <div class="book-cover" style="background: linear-gradient(135deg, #27ae60, #1e8449);">
+          <span class="book-cover-title">Тень горы</span>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Тень горы</h3>
+          <p class="book-desc">Продолжение культового романа «Шантарам» о жизни и свободе.</p>
+          <div class="book-meta">
+            <span class="book-genre">Роман</span>
+            <span class="book-age">18+</span>
+          </div>
+          <div class="book-price">890 ₽</div>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <div class="book-cover" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+          <span class="book-cover-title">Дюна</span>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Дюна</h3>
+          <p class="book-desc">Легендарная сага о пустынной планете Арракис и специи.</p>
+          <div class="book-meta">
+            <span class="book-genre">Фантастика</span>
+            <span class="book-age">16+</span>
+          </div>
+          <div class="book-price">1 250 ₽</div>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <div class="book-cover" style="background: linear-gradient(135deg, #e67e22, #d35400);">
+          <span class="book-cover-title">Мастер и Маргарита</span>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Мастер и Маргарита</h3>
+          <p class="book-desc">Мистический роман Михаила Булгакова о любви и свободе.</p>
+          <div class="book-meta">
+            <span class="book-genre">Классика</span>
+            <span class="book-age">16+</span>
+          </div>
+          <div class="book-price">720 ₽</div>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <div class="book-cover" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">
+          <span class="book-cover-title">Гарри Поттер и философский камень</span>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Гарри Поттер и философский камень</h3>
+          <p class="book-desc">Первая книга о юном волшебнике и школе Хогвартс.</p>
+          <div class="book-meta">
+            <span class="book-genre">Фэнтези</span>
+            <span class="book-age">6+</span>
+          </div>
+          <div class="book-price">980 ₽</div>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <div class="book-cover" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+          <span class="book-cover-title">1984</span>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">1984</h3>
+          <p class="book-desc">Антиутопия Джорджа Оруэлла о тотальном контроле и свободе мысли.</p>
+          <div class="book-meta">
+            <span class="book-genre">Антиутопия</span>
+            <span class="book-age">16+</span>
+          </div>
+          <div class="book-price">640 ₽</div>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <div class="book-cover" style="background: linear-gradient(135deg, #1abc9c, #16a085);">
+          <span class="book-cover-title">Sapiens</span>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Sapiens. Краткая история человечества</h3>
+          <p class="book-desc">Как Homo sapiens стал господствующим видом на Земле.</p>
+          <div class="book-meta">
+            <span class="book-genre">Научпоп</span>
+            <span class="book-age">12+</span>
+          </div>
+          <div class="book-price">1 100 ₽</div>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <div class="book-cover" style="background: linear-gradient(135deg, #f39c12, #e67e22);">
+          <span class="book-cover-title">Маленький принц</span>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Маленький принц</h3>
+          <p class="book-desc">Философская сказка о добре, дружбе и ответственности.</p>
+          <div class="book-meta">
+            <span class="book-genre">Сказка</span>
+            <span class="book-age">6+</span>
+          </div>
+          <div class="book-price">550 ₽</div>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <div class="book-cover" style="background: linear-gradient(135deg, #34495e, #2c3e50);">
+          <span class="book-cover-title">Шантарам</span>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Шантарам</h3>
+          <p class="book-desc">История беглеца, нашедшего дом в сердце Бомбея.</p>
+          <div class="book-meta">
+            <span class="book-genre">Роман</span>
+            <span class="book-age">18+</span>
+          </div>
+          <div class="book-price">950 ₽</div>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <div class="book-cover" style="background: linear-gradient(135deg, #ff6b6b, #ee5253);">
+          <span class="book-cover-title">Три товарища</span>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Три товарища</h3>
+          <p class="book-desc">Роман Эриха Марии Ремарка о дружбе и любви на фоне войны.</p>
+          <div class="book-meta">
+            <span class="book-genre">Классика</span>
+            <span class="book-age">16+</span>
+          </div>
+          <div class="book-price">780 ₽</div>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <div class="book-cover" style="background: linear-gradient(135deg, #00b894, #009975);">
+          <span class="book-cover-title">Атлант расправил плечи</span>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Атлант расправил плечи</h3>
+          <p class="book-desc">Философский роман Айн Рэнд о разуме, свободе и капитализме.</p>
+          <div class="book-meta">
+            <span class="book-genre">Философия</span>
+            <span class="book-age">16+</span>
+          </div>
+          <div class="book-price">1 400 ₽</div>
+        </div>
+      </article>
+
+    </div>
+
+    <button class="carousel-arrow carousel-arrow--right" id="btn_next" aria-label="Вперёд">›</button>
+  </div>
+</section>
+
+<script type="text/javascript" src="script.js"></script>
+<div class="final">
+    <p>
+        @Лабораторные работы "Изательство Act" - Якубович Анна Ильинична ИБМ3-54Б
+    </p>
+</div>
+</body>
+</html>
