@@ -1,0 +1,222 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #27ae60;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header__logo {
+    width: 80px;
+    height: auto;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu a:hover { color: #e3f7da; }
+
+/* ---------- Блок каталога ---------- */
+.catalog-section {
+    max-width: 1200px;
+    margin: 120px auto 60px;
+    padding: 0 20px;
+}
+
+.catalog-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.catalog-header h2 {
+    font-size: 32px;
+    color: #1e8449;
+    margin: 0 0 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.catalog-header h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: #27ae60;
+    border-radius: 2px;
+}
+
+.catalog-subtitle {
+    color: #7f8c8d;
+    font-size: 16px;
+    margin: 20px 0 0;
+}
+
+.catalog-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.catalog-search {
+    flex: 1;
+    min-width: 220px;
+    max-width: 360px;
+    padding: 10px 16px;
+    border: 2px solid #27ae60;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.catalog-search:focus {
+    border-color: #1e8449;
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2);
+}
+
+/* ---------- Карточка книги ---------- */
+.book-card {
+    overflow: hidden;
+    border-radius: 16px;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(39, 174, 96, 0.25) !important;
+}
+
+.book-cover {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.book-cover-title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.book-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e8449;
+    text-align: right;
+    border-top: 1px dashed #e0e0e0;
+    padding-top: 12px;
+}
+
+.catalog-empty {
+    width: 100%;
+    text-align: center;
+    color: #7f8c8d;
+    padding: 60px 0;
+    font-size: 18px;
+}
+
+/* ---------- Подробная страница ---------- */
+.product-cover {
+    height: 100%;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- Кнопки в стиле АСТ ---------- */
+.btn-ast {
+    background-color: #27ae60;
+    border: 2px solid #1e8449;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 8px 18px;
+}
+
+.btn-ast:hover {
+    background-color: #2ecc71;
+    border-color: #27ae60;
+    color: #fff;
+}
+
+.btn-ast-outline {
+    background-color: transparent;
+    border: 2px solid #27ae60;
+    color: #1e8449;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 6px 16px;
+}
+
+.btn-ast-outline:hover {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.btn-danger-ast {
+    background-color: #e74c3c;
+    border: 2px solid #c0392b;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 6px 16px;
+}
+
+.btn-danger-ast:hover {
+    background-color: #ec7063;
+    border-color: #e74c3c;
+    color: #fff;
+}
+
+/* ---------- Футер ---------- */
+.final {
+    text-align: center;
+    padding: 20px;
+    color: #7f8c8d;
+    font-size: 14px;
+}
